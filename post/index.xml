@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on WuHT</title>
+    <link>https://nghsky.github.io/post/</link>
+    <description>Recent content in Posts on WuHT</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 26 Nov 2018 10:30:35 +0800</lastBuildDate>
+    
+	<atom:link href="https://nghsky.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Win10安装docker</title>
+      <link>https://nghsky.github.io/post/2018/11/26/docker-install/</link>
+      <pubDate>Mon, 26 Nov 2018 10:30:35 +0800</pubDate>
+      
+      <guid>https://nghsky.github.io/post/2018/11/26/docker-install/</guid>
+      <description>目前Docker提供专门的Win10专业版系统的安装包，首先需要开启Hyper-V 开启Hyper-V  程序和功能&amp;ndash;&amp;gt;启用或关闭Windows功能&amp;ndash;&amp;gt;勾选 Hyper-V  安装Docker  最新版 Toolbox 下载地址： https://www.docker.com/get-docker 下载时需要登录docker，注册时注册doker id不能点击Sign Up 按钮(禁用)，网页有一个 google 的人机验证按钮，需要使用代理 运行安装文件，双击下载的 Docker for Windows Installe 安装文件，一路 Next，点击 Finish 完成安装 安装完成后，Docker 会自动启动。通知栏上会出现个小鲸鱼的图标 ，这表示 Docker 正在运行。 桌边也会出现三个图标，我们可以在命令行执行 docker version 来查看版本号，docker run hello-world 来载入测试镜像测试  镜像加速  鉴于国内网络问题，后续拉取 Docker 镜像十分缓慢，我们可以需要配置加速器来解决，我使用的是网易的镜像地址：http://hub-mirror.c.163.com 新版的 Docker 使用 /etc/docker/daemon.json（Linux） 或者 %programdata%\docker\config\daemon.json（Windows） 来配置 Daemon 请在该配置文件中加入（没有该文件的话，请先建一个）：  { &amp;quot;registry-mirrors&amp;quot;: [&amp;quot;http://hub-mirror.c.163.com&amp;quot;] }   致谢 感谢您花时间阅读，谢谢。</description>
+    </item>
+    
+    <item>
+      <title>My First Blog</title>
+      <link>https://nghsky.github.io/post/my-first-blog/</link>
+      <pubDate>Thu, 22 Nov 2018 13:53:59 +0800</pubDate>
+      
+      <guid>https://nghsky.github.io/post/my-first-blog/</guid>
+      <description> 大家好，我渣辉。
+简介  出生地：香港 性别：男 年龄：38  演员经历  是兄弟就来啃我 是兄弟就来啃我啊 是兄弟就来啃我啊哈哈  </description>
+    </item>
+    
+  </channel>
+</rss>
