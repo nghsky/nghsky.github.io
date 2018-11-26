@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="WuHT">
+    <meta name="description" content="https://nghsky.github.io">
+    <meta name="keywords" content="blog,developer,personal">
+    
+    <meta property="og:site_name" content="WuHT&#39;s Blog">
+    <meta property="og:title" content="
+  安装Hugo - WuHT&#39;s Blog
+">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nghsky.github.io/post/2018/11/26/hugo-install/">
+    <meta property="og:image" content="https://nghsky.github.io">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="https://nghsky.github.io/post/2018/11/26/hugo-install/">
+    <meta name="twitter:image" content="https://nghsky.github.io">
+
+    <base href="https://nghsky.github.io">
+    <title>
+  安装Hugo - WuHT&#39;s Blog
+</title>
+
+    <link rel="canonical" href="https://nghsky.github.io/post/2018/11/26/hugo-install/">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="https://nghsky.github.io/css/style.min.css">
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://nghsky.github.io/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://nghsky.github.io/images/favicon-16x16.png" sizes="16x16">
+
+    
+
+    <meta name="generator" content="Hugo 0.51" />
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/index">WuHT&#39;s Blog</a>
+    <input type="checkbox" id="menu-control"/>
+    <label class="menu-mobile  float-right " for="menu-control">
+      <span class="btn-mobile  float-right ">&#9776;</span>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://nghsky.github.io/post">Blog</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://nghsky.github.io/archives">Archives</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://nghsky.github.io/categories">Categories</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://nghsky.github.io/tags">Tags</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://nghsky.github.io/about">About</a>
+            </li>
+          
+        
+        
+      </ul>
+    </label>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1>安装Hugo</h1>
+    </header>
+
+    
+
+<h1 id="hugo-官方主页-https-gohugo-io">Hugo 官方主页：<a href="https://gohugo.io">https://gohugo.io</a></h1>
+
+<h1 id="方法一">方法一</h1>
+
+<h3 id="安装chocolatey">安装Chocolatey</h3>
+
+<ul>
+<li>以管理员身份运行cmd命令行
+<code>
+@&quot;%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe&quot; -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command &quot;iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))&quot; &amp;&amp; SET &quot;PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin&quot;
+</code></li>
+<li>成功后，输入choco，会显示Chocolatey的版本</li>
+<li>在安装好choco后，cmd下执行：</li>
+<li>choco install hugo -confirm （官网方法）</li>
+<li>成功后，执行hugo version。会显示hugo版本号。如果失败查看一下环境变量是否适配</li>
+</ul>
+
+<h1 id="方法二">方法二</h1>
+
+<ul>
+<li>从 hugo 的 GitHub 仓库 下载安装包(<a href="https://github.com/gohugoio/hugo/releases)，使用即可。下载解压后添加到">https://github.com/gohugoio/hugo/releases)，使用即可。下载解压后添加到</a> Windows 的系统环境变量的 PATH 中即可，不需安装。</li>
+</ul>
+
+<h3 id="初始化项目">初始化项目</h3>
+
+<ul>
+<li>C:\Users\WuHaotian&gt;hugo new site blog
+命令执行后创建项目目录，其中的目录结构为：</li>
+<li>├─archetypes</li>
+<li>├─content</li>
+<li>├─data</li>
+<li>├─layouts</li>
+<li>├─static</li>
+<li>├─themes</li>
+<li>└─config.toml</li>
+<li>config.toml 是网站的配置文件，hugo 同时还支持 YAML 格式的 config.yaml 或 JSON 格式的 config.json。content 目录放 markdown 文章，data 目录放数据，layouts 目录放网站模板文件，static 目录放图片、css、js 等静态资源，themes 命令放下载的主题。</li>
+</ul>
+
+<h3 id="下载主题">下载主题</h3>
+
+<ul>
+<li>hugo 默认不带主题，但是没有主题的话又无法工作。所以，请在 主题网站 选择你看中的主题后，点击下载链接从 GitHub 下载到 themes 目录中。(<a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a>)</li>
+<li>C:\Users\WuHaotian\blog&gt;cd themes</li>
+<li>C:\Users\WuHaotian\blog\themes&gt;git clone <a href="https://github.com/luizdepra/hugo-coder.git">https://github.com/luizdepra/hugo-coder.git</a> （why？coder==）</li>
+<li>检查 themes 目录下是否成功下载主题：</li>
+<li>C:\Users\WuHaotian\blog\themes&gt;tree
+ 文件夹 PATH 列表
+卷序列号为 00000049 30BD:DD70
+C:.
+
+<ul>
+<li>└─hugo-bootstrap</li>
+<li>├─exampleSite</li>
+<li>│  ├─content</li>
+<li>│  │  └─post</li>
+<li>│  └─layouts</li>
+<li>│      └─partials</li>
+<li>├─i18n</li>
+<li>├─images</li>
+<li>├─layouts</li>
+<li>│  ├─partials</li>
+<li>│  └─_default</li>
+<li>└─static</li>
+<li>└─css</li>
+</ul></li>
+<li></li>
+</ul>
+
+<h3 id="添加内容">添加内容</h3>
+
+<ul>
+<li><p>在项目目录中执行 hugo new XX.md 命令，会在 content 目录中创建这个 XX.md 文件。
+hugo new about.md</p></li>
+
+<li><p>这个文件的默认内容如下：</p>
+<div class="highlight"><pre class="chroma">title: &#34;About&#34;
+date: 2018-05-22T22:04:26+08:00
+draft: true</pre></div></li>
+
+<li><p>文件默认内容在，draft 表示是否是草稿，编辑完成后请将其改为 false，否则编译会跳过草稿文件。具体的博客内容在下面写：</p></li>
+
+<li><p>内容随便写</p></li>
+
+<li><p>对于博客文件，通常放在 content/post 目录中：</p></li>
+</ul>
+
+<h3 id="启动-hugo-自带的服务器">启动 hugo 自带的服务器</h3>
+
+<ul>
+<li>在项目根目录下，通过 hugo server 命令可以使用 hugo 内置服务器调试预览博客。&ndash;theme 选项可以指定主题，&ndash;watch 选项可以在修改文件后自动刷新浏览器，&ndash;buildDrafts 包括标记为草稿（draft）的内容。</li>
+<li>C:\Users\WuHaotian\blog&gt;hugo server &ndash;theme=coder-portfolio &ndash;buildDrafts &ndash;watch</li>
+<li>启动成功后在网页输入 <a href="http://localhost:1313（首页），http://localhost:1313/about（about页面）">http://localhost:1313（首页），http://localhost:1313/about（about页面）</a></li>
+</ul>
+
+<h3 id="生成public">生成public</h3>
+
+<ul>
+<li>最终我们需要的是静态的 HTML 文件。&ndash;theme 选项指定主题，&ndash;baseUrl 指定了项目的网站。最终静态文件生成在 public 目录中：</li>
+<li>C:\Users\WuHaotian\blog&gt;hugo &ndash;theme=coder-portfolio &ndash;baseUrl=&ldquo;<a href="https://nghsky.github.io&quot;">https://nghsky.github.io&quot;</a> （baseurl中要使用https，http会导致不能文件访问）</li>
+</ul>
+
+<hr />
+
+<h1 id="致谢">致谢</h1>
+
+<p>感谢您花时间阅读，谢谢。</p>
+
+  </article>
+</section>
+
+
+      </div>
+      
+        <footer class="footer">
+  <section class="container">
+    
+      <div class="sns-shares sp-sns-shares">
+        <a class="sns-share twitter-share" href="https://twitter.com/intent/tweet?original_referer=https%3a%2f%2fnghsky.github.io%2fpost%2f2018%2f11%2f26%2fhugo-install%2f&ref_src=twsrc%5Etfw&text=%e5%ae%89%e8%a3%85Hugo WuHT%27s%20Blog&tw_p=tweetbutton&url=https%3a%2f%2fnghsky.github.io%2fpost%2f2018%2f11%2f26%2fhugo-install%2f"><i class="fab fa-twitter"></i></a>
+        <a class="fb btn sns-share fb-share" href="http://www.facebook.com/share.php?u=https%3a%2f%2fnghsky.github.io%2fpost%2f2018%2f11%2f26%2fhugo-install%2f" onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fab fa-facebook-f"></i></a>
+        <a class="sns-share hatena-share" href="http://b.hatena.ne.jp/entry/https://nghsky.github.io/post/2018/11/26/hugo-install/"  data-hatena-bookmark-layout="touch" data-hatena-bookmark-width="40" data-hatena-bookmark-height="40" title="このエントリーをはてなブックマークに追加"><i class="fas fa-bookmark"></i></a>
+        <a class="sns-share line-share" href="https://social-plugins.line.me/lineit/share?url=https%3a%2f%2fnghsky.github.io%2fpost%2f2018%2f11%2f26%2fhugo-install%2f"><i class="fab fa-line"></i></a>
+      </div>
+    
+    
+      <p>Enter a text here.</p>
+    
+     © 2018    ·  Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com">CoderPortfolio</a>. 
+
+  </section>
+</footer>
+<div class="fixed-bar">
+  <section class="container">
+    
+      <p id="privateTriggerText">Do you want to know me more private?→<a id="privateTrigger">Click!</a></p>
+    
+    
+      <div class="sns-shares pc-sns-shares">
+        <a class="sns-share twitter-share" href="https://twitter.com/intent/tweet?original_referer=https%3a%2f%2fnghsky.github.io%2fpost%2f2018%2f11%2f26%2fhugo-install%2f&ref_src=twsrc%5Etfw&text=%e5%ae%89%e8%a3%85Hugo WuHT%27s%20Blog&tw_p=tweetbutton&url=https%3a%2f%2fnghsky.github.io%2fpost%2f2018%2f11%2f26%2fhugo-install%2f"><i class="fab fa-twitter"></i></a>
+        <a class="fb btn sns-share fb-share" href="http://www.facebook.com/share.php?u=https%3a%2f%2fnghsky.github.io%2fpost%2f2018%2f11%2f26%2fhugo-install%2f" onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fab fa-facebook-f"></i></a>
+        <a class="sns-share hatena-share" href="http://b.hatena.ne.jp/entry/https://nghsky.github.io/post/2018/11/26/hugo-install/"  data-hatena-bookmark-layout="touch" data-hatena-bookmark-width="40" data-hatena-bookmark-height="40" title="このエントリーをはてなブックマークに追加"><i class="fas fa-bookmark"></i></a>
+        <a class="sns-share line-share" href="https://social-plugins.line.me/lineit/share?url=https%3a%2f%2fnghsky.github.io%2fpost%2f2018%2f11%2f26%2fhugo-install%2f"><i class="fab fa-line"></i></a>
+       </div>
+    
+  </section>
+</div>
+
+      
+    </main>
+
+    
+
+  <script src="https://nghsky.github.io/js/app.js"></script>
+  
+  <script>
+  (function($) {
+    $(function() {
+      $('#privateTrigger').on('click', function() {
+        $('.private').slideToggle();
+        $('#privateTriggerText').text("Thank You! Please share it if you like it→");
+      });
+    });
+   })(jQuery);
+  </script>
+  
+  </body>
+</html>

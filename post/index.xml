@@ -6,10 +6,19 @@
     <description>Recent content in Posts on WuHT&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 26 Nov 2018 10:30:35 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 26 Nov 2018 15:23:35 +0800</lastBuildDate>
     
 	<atom:link href="https://nghsky.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>安装Hugo</title>
+      <link>https://nghsky.github.io/post/2018/11/26/hugo-install/</link>
+      <pubDate>Mon, 26 Nov 2018 15:23:35 +0800</pubDate>
+      
+      <guid>https://nghsky.github.io/post/2018/11/26/hugo-install/</guid>
+      <description>Hugo 官方主页：https://gohugo.io 方法一 安装Chocolatey  以管理员身份运行cmd命令行  @&amp;quot;%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe&amp;quot; -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command &amp;quot;iex ((New-Object System.Net.WebClient).DownloadString(&#39;https://chocolatey.org/install.ps1&#39;))&amp;quot; &amp;amp;&amp;amp; SET &amp;quot;PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin&amp;quot;  成功后，输入choco，会显示Chocolatey的版本 在安装好choco后，cmd下执行： choco install hugo -confirm （官网方法） 成功后，执行hugo version。会显示hugo版本号。如果失败查看一下环境变量是否适配  方法二  从 hugo 的 GitHub 仓库 下载安装包(https://github.com/gohugoio/hugo/releases)，使用即可。下载解压后添加到 Windows 的系统环境变量的 PATH 中即可，不需安装。  初始化项目  C:\Users\WuHaotian&amp;gt;hugo new site blog 命令执行后创建项目目录，其中的目录结构为： ├─archetypes ├─content ├─data ├─layouts ├─static ├─themes └─config.toml config.toml 是网站的配置文件，hugo 同时还支持 YAML 格式的 config.yaml 或 JSON 格式的 config.json。content 目录放 markdown 文章，data 目录放数据，layouts 目录放网站模板文件，static 目录放图片、css、js 等静态资源，themes 命令放下载的主题。  下载主题  hugo 默认不带主题，但是没有主题的话又无法工作。所以，请在 主题网站 选择你看中的主题后，点击下载链接从 GitHub 下载到 themes 目录中。(https://themes.</description>
+    </item>
     
     <item>
       <title>Win10安装docker</title>
@@ -17,7 +26,7 @@
       <pubDate>Mon, 26 Nov 2018 10:30:35 +0800</pubDate>
       
       <guid>https://nghsky.github.io/post/2018/11/26/docker-install/</guid>
-      <description>目前Docker提供专门的Win10专业版系统的安装包，首先需要开启Hyper-V 开启Hyper-V  程序和功能&amp;ndash;&amp;gt;启用或关闭Windows功能&amp;ndash;&amp;gt;勾选 Hyper-V  安装Docker  最新版 Toolbox 下载地址： https://www.docker.com/get-docker 下载时需要登录docker，注册时注册doker id不能点击Sign Up 按钮(禁用)，网页有一个 google 的人机验证按钮，需要使用代理 运行安装文件，双击下载的 Docker for Windows Installe 安装文件，一路 Next，点击 Finish 完成安装 安装完成后，Docker 会自动启动。通知栏上会出现个小鲸鱼的图标 ，这表示 Docker 正在运行。 桌边也会出现三个图标，我们可以在命令行执行 docker version 来查看版本号，docker run hello-world 来载入测试镜像测试  镜像加速  鉴于国内网络问题，后续拉取 Docker 镜像十分缓慢，我们可以需要配置加速器来解决，我使用的是网易的镜像地址：http://hub-mirror.c.163.com 新版的 Docker 使用 /etc/docker/daemon.json（Linux） 或者 %programdata%\docker\config\daemon.json（Windows） 来配置 Daemon 请在该配置文件中加入（没有该文件的话，请先建一个）：  { &amp;quot;registry-mirrors&amp;quot;: [&amp;quot;http://hub-mirror.c.163.com&amp;quot;] }   致谢 感谢您花时间阅读，谢谢。</description>
+      <description>目前Docker提供专门的Win10专业版系统的安装包，首先需要开启Hyper-V 开启Hyper-V  程序和功能&amp;ndash;&amp;gt;启用或关闭Windows功能&amp;ndash;&amp;gt;勾选 Hyper-V  安装Docker  最新版 Toolbox 下载地址： https://www.docker.com/get-docker 下载时需要登录docker，注册时注册doker id不能点击Sign Up 按钮(禁用)，网页有一个 google 的人机验证按钮，需要使用代理 运行安装文件，双击下载的 Docker for Windows Installe 安装文件，一路 Next，点击 Finish 完成安装 安装完成后，Docker 会自动启动。通知栏上会出现个小鲸鱼的图标 ，这表示 Docker 正在运行。 桌边也会出现三个图标，我们可以在命令行执行 docker version 来查看版本号，docker run hello-world 来载入测试镜像测试  更改docker拉取的镜像存储路径  pull镜像的默认路径为：C:\Users\Public\Documents\Shared Virtual Machines 首先需要把路径下的映像文件复制到你要改的路径，比如我的：D:\vmwork\Virtual hard disks 打开控制面板-&amp;gt;管理工具-&amp;gt;打开Hyper-v管理器-&amp;gt;右击-&amp;gt;Hyper-v设置 将虚拟硬盘文件路径更改为自己设置的  镜像加速  鉴于国内网络问题，后续拉取 Docker 镜像十分缓慢，我们可以需要配置加速器来解决，我使用的是网易的镜像地址：http://hub-mirror.c.163.com 新版的 Docker 使用 /etc/docker/daemon.json（Linux） 或者 %programdata%\docker\config\daemon.json（Windows） 来配置 Daemon 请在该配置文件中加入（没有该文件的话，请先建一个）：  { &amp;quot;registry-mirrors&amp;quot;: [&amp;quot;http://hub-mirror.c.163.com&amp;quot;] }   Daemon：Docker for windows10 可以配置阿里云镜像，到https://cr.</description>
     </item>
     
     <item>
@@ -28,6 +37,28 @@
       <guid>https://nghsky.github.io/post/my-first-blog/</guid>
       <description> 大家好，我渣辉。
 简介  出生地：香港 性别：男 年龄：38  演员经历  是兄弟就来啃我 是兄弟就来啃我啊 是兄弟就来啃我啊哈哈  </description>
+    </item>
+    
+    <item>
+      <title>常用命令</title>
+      <link>https://nghsky.github.io/post/2018/11/26/commands/</link>
+      <pubDate>Sun, 11 Nov 2018 11:11:11 +0800</pubDate>
+      
+      <guid>https://nghsky.github.io/post/2018/11/26/commands/</guid>
+      <description>Hugo搭建个人博客本人常用命令  hugo &amp;ndash;theme=coder-portfolio &amp;ndash;baseUrl=&amp;ldquo;https://nghsky.github.io&amp;quot;
+ cd public
+ git init
+ git remote add origin http://github.com/nghsky/nghsky.github.io.git
+ git add -A
+ git commit -m &amp;ldquo;first commit&amp;rdquo;
+ git push -u origin master
+ git status
+ git add -A:添加多文件
+ git add . :提交新添加和被修改的文件，不包含被删除的
+ git add -u :提交被修改和被删除的文件，不提交新添加的文件
+ git commit -m&amp;rdquo;本次提交说明&amp;rdquo;
+ git push
+  致谢 感谢您花时间阅读，谢谢。</description>
     </item>
     
   </channel>
