@@ -6,10 +6,34 @@
     <description>Recent content on WuHT&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 26 Nov 2018 15:23:35 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 22 Nov 2018 13:09:35 +0800</lastBuildDate>
     
 	<atom:link href="https://nghsky.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About</title>
+      <link>https://nghsky.github.io/about/</link>
+      <pubDate>Thu, 22 Nov 2018 13:09:35 +0800</pubDate>
+      
+      <guid>https://nghsky.github.io/about/</guid>
+      <description> 联系方式  手机：13011144460 Email：nghsky@foxmail.com QQ/微信号：980005070/nghsky  个人信息  吴昊天/男/1991 本科/黑龙江大学软件工程专业 工作年限：5年 技术博客：this. Github：http://github.com/vms
+ 期望职位：Java程序猿
+ 期望薪资：一个能达到的小目标，比方说我先挣它一个亿
+ 期望城市：北京
+  工作经历 北京华生恒业科技有限公司 （ 2014年11月 ~ 至今 ） SSR、MIPMS 北京云网高科技术有限公司 （ 2013年3月 ~ 2014年11月 ） vms中石油车辆管理系统 技能清单 以下均为我熟练使用的技能
+ Web开发：Java Web框架：ThinkPHP/Yaf/Yii/Lavaral/LazyPHP 前端框架：Bootstrap/AngularJS/EmberJS/HTML5/Cocos2dJS/ionic 前端工具：Bower/Gulp/SaSS/LeSS/PhoneGap 数据库相关：MySQL/PgSQL/PDO/SQLite 版本管理、文档和自动化部署工具：Svn/Git 单元测试：JUnit/SimpleTest/Qunit 云和开放平台：SAE/BAE/AWS/微信应用开发  参考技能关键字  java spring web mysql oracle linux  致谢 感谢您花时间阅读我的简历，期待能有机会和您共事。
+这里使用markdown来编写文章 </description>
+    </item>
+    
+    <item>
+      <title>文件类型之间转换</title>
+      <link>https://nghsky.github.io/post/2018/11/29/ffbconvert/</link>
+      <pubDate>Thu, 29 Nov 2018 09:11:11 +0800</pubDate>
+      
+      <guid>https://nghsky.github.io/post/2018/11/29/ffbconvert/</guid>
+      <description>File、FileInputStream、byte三种类型之间转换 1. 将File、FileInputStream 转换为byte数组 File file = new File(&amp;#34;test.txt&amp;#34;); InputStream input = new FileInputStream(file); byte[] byt = new byte[input.available()]; input.read(byt); 2. 将byte数组转换为InputStream： byte[] byt = new byte[1024]; InputStream input = new ByteArrayInputStream(byt); 3. 将byte数组转换为File： File file = new File(&amp;#39;&amp;#39;); OutputStream output = new FileOutputStream(file); BufferedOutputStream bufferedOutput = new BufferedOutputStream(output); bufferedOutput.write(byt); 致谢 感谢您花时间阅读，谢谢。</description>
+    </item>
     
     <item>
       <title>安装Hugo</title>
@@ -30,50 +54,12 @@
     </item>
     
     <item>
-      <title>My First Blog</title>
-      <link>https://nghsky.github.io/post/my-first-blog/</link>
-      <pubDate>Thu, 22 Nov 2018 13:53:59 +0800</pubDate>
-      
-      <guid>https://nghsky.github.io/post/my-first-blog/</guid>
-      <description> 大家好，我渣辉。
-简介  出生地：香港 性别：男 年龄：38  演员经历  是兄弟就来啃我 是兄弟就来啃我啊 是兄弟就来啃我啊哈哈  </description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://nghsky.github.io/about/</link>
-      <pubDate>Thu, 22 Nov 2018 13:09:35 +0800</pubDate>
-      
-      <guid>https://nghsky.github.io/about/</guid>
-      <description>date = &amp;ldquo;2017-07-03T15:37:11+08:00&amp;rdquo; tags = [&amp;ldquo;blog&amp;rdquo;] title = &amp;ldquo;my first blog&amp;rdquo;
-联系方式  手机：13011144460 Email：nghsky@foxmail.com QQ/微信号：980005070/nghsky  个人信息  吴昊天/男/1991 本科/黑龙江大学软件工程专业 工作年限：5年 技术博客：this. Github：http://github.com/vms
- 期望职位：Java程序猿
- 期望薪资：一个能达到的小目标，比方说我先挣它一个亿
- 期望城市：北京
-  工作经历 北京华生恒业科技有限公司 （ 2014年11月 ~ 至今 ） SSR、MIPMS 北京云网高科技术有限公司 （ 2013年3月 ~ 2014年11月 ） vms中石油车辆管理系统 技能清单 以下均为我熟练使用的技能
- Web开发：Java Web框架：ThinkPHP/Yaf/Yii/Lavaral/LazyPHP 前端框架：Bootstrap/AngularJS/EmberJS/HTML5/Cocos2dJS/ionic 前端工具：Bower/Gulp/SaSS/LeSS/PhoneGap 数据库相关：MySQL/PgSQL/PDO/SQLite 版本管理、文档和自动化部署工具：Svn/Git 单元测试：JUnit/SimpleTest/Qunit 云和开放平台：SAE/BAE/AWS/微信应用开发  参考技能关键字  java spring web mysql oracle linux  致谢 感谢您花时间阅读我的简历，期待能有机会和您共事。</description>
-    </item>
-    
-    <item>
       <title>常用命令</title>
       <link>https://nghsky.github.io/post/2018/11/26/commands/</link>
-      <pubDate>Sun, 11 Nov 2018 11:11:11 +0800</pubDate>
+      <pubDate>Fri, 23 Nov 2018 11:11:11 +0800</pubDate>
       
       <guid>https://nghsky.github.io/post/2018/11/26/commands/</guid>
-      <description>Hugo搭建个人博客本人常用命令  hugo &amp;ndash;theme=coder-portfolio &amp;ndash;baseUrl=&amp;ldquo;https://nghsky.github.io&amp;quot;
- cd public
- git init
- git remote add origin http://github.com/nghsky/nghsky.github.io.git
- git add -A
- git commit -m &amp;ldquo;first commit&amp;rdquo;
- git push -u origin master
- git status
- git add -A:添加多文件
- git add . :提交新添加和被修改的文件，不包含被删除的
- git add -u :提交被修改和被删除的文件，不提交新添加的文件
- git commit -m&amp;rdquo;本次提交说明&amp;rdquo;
- git push
-  致谢 感谢您花时间阅读，谢谢。</description>
+      <description>Hugo搭建个人博客本人常用命令 编译 hugo --theme=coder-portfolio --baseUrl=&amp;#34;https://nghsky.github.io&amp;#34; cd public git init git remote add origin http://github.com/nghsky/nghsky.github.io.git git add -A git commit -m &amp;#34;first commit&amp;#34; git push -u origin master git status git add -A:添加多文件 git add . :提交新添加和被修改的文件，不包含被删除的 git add -u :提交被修改和被删除的文件，不提交新添加的文件 git commit -m&amp;#34;本次提交说明&amp;#34; git push 致谢 感谢您花时间阅读，谢谢。</description>
     </item>
     
   </channel>

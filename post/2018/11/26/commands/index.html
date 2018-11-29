@@ -96,35 +96,22 @@
     
 
 <h1 id="hugo搭建个人博客本人常用命令">Hugo搭建个人博客本人常用命令</h1>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">编译</span>
+<span class="n">hugo</span> <span class="o">--</span><span class="n">theme</span><span class="o">=</span><span class="n">coder</span><span class="o">-</span><span class="n">portfolio</span> <span class="o">--</span><span class="n">baseUrl</span><span class="o">=</span><span class="s">&#34;https://nghsky.github.io&#34;</span>
 
-<ul>
-<li><p>hugo &ndash;theme=coder-portfolio &ndash;baseUrl=&ldquo;<a href="https://nghsky.github.io&quot;">https://nghsky.github.io&quot;</a></p></li>
+<span class="n">cd</span> <span class="kd">public</span>
+<span class="n">git</span> <span class="n">init</span>
+<span class="n">git</span> <span class="n">remote</span> <span class="n">add</span> <span class="n">origin</span> <span class="nl">http:</span><span class="c1">//github.com/nghsky/nghsky.github.io.git
+</span><span class="c1"></span><span class="n">git</span> <span class="n">add</span> <span class="o">-</span><span class="n">A</span>
+<span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s">&#34;first commit&#34;</span>
+<span class="n">git</span> <span class="n">push</span> <span class="o">-</span><span class="n">u</span> <span class="n">origin</span> <span class="n">master</span>
 
-<li><p>cd public</p></li>
-
-<li><p>git init</p></li>
-
-<li><p>git remote add origin <a href="http://github.com/nghsky/nghsky.github.io.git">http://github.com/nghsky/nghsky.github.io.git</a></p></li>
-
-<li><p>git add -A</p></li>
-
-<li><p>git commit -m &ldquo;first commit&rdquo;</p></li>
-
-<li><p>git push -u origin master</p></li>
-
-<li><p>git status</p></li>
-
-<li><p>git add -A:添加多文件</p></li>
-
-<li><p>git add . :提交新添加和被修改的文件，不包含被删除的</p></li>
-
-<li><p>git add -u :提交被修改和被删除的文件，不提交新添加的文件</p></li>
-
-<li><p>git commit -m&rdquo;本次提交说明&rdquo;</p></li>
-
-<li><p>git push</p></li>
-</ul>
-
+<span class="n">git</span> <span class="n">status</span>
+<span class="n">git</span> <span class="n">add</span> <span class="o">-</span><span class="nl">A:</span><span class="n">添加多文件</span>
+<span class="n">git</span> <span class="n">add</span> <span class="o">.</span> <span class="o">:</span><span class="n">提交新添加和被修改的文件</span><span class="err">，</span><span class="n">不包含被删除的</span>
+<span class="n">git</span> <span class="n">add</span> <span class="o">-</span><span class="n">u</span> <span class="o">:</span><span class="n">提交被修改和被删除的文件</span><span class="err">，</span><span class="n">不提交新添加的文件</span>
+<span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span><span class="s">&#34;本次提交说明&#34;</span>
+<span class="n">git</span> <span class="n">push</span></code></pre></div>
 <hr />
 
 <h1 id="致谢">致谢</h1>

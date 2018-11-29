@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on WuHT&#39;s Blog</title>
+    <link>https://nghsky.github.io/tags/hugo/</link>
+    <description>Recent content in Hugo on WuHT&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 22 Nov 2018 13:09:35 +0800</lastBuildDate>
+    
+	<atom:link href="https://nghsky.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>https://nghsky.github.io/about/</link>
+      <pubDate>Thu, 22 Nov 2018 13:09:35 +0800</pubDate>
+      
+      <guid>https://nghsky.github.io/about/</guid>
+      <description> 联系方式  手机：13011144460 Email：nghsky@foxmail.com QQ/微信号：980005070/nghsky  个人信息  吴昊天/男/1991 本科/黑龙江大学软件工程专业 工作年限：5年 技术博客：this. Github：http://github.com/vms
+ 期望职位：Java程序猿
+ 期望薪资：一个能达到的小目标，比方说我先挣它一个亿
+ 期望城市：北京
+  工作经历 北京华生恒业科技有限公司 （ 2014年11月 ~ 至今 ） SSR、MIPMS 北京云网高科技术有限公司 （ 2013年3月 ~ 2014年11月 ） vms中石油车辆管理系统 技能清单 以下均为我熟练使用的技能
+ Web开发：Java Web框架：ThinkPHP/Yaf/Yii/Lavaral/LazyPHP 前端框架：Bootstrap/AngularJS/EmberJS/HTML5/Cocos2dJS/ionic 前端工具：Bower/Gulp/SaSS/LeSS/PhoneGap 数据库相关：MySQL/PgSQL/PDO/SQLite 版本管理、文档和自动化部署工具：Svn/Git 单元测试：JUnit/SimpleTest/Qunit 云和开放平台：SAE/BAE/AWS/微信应用开发  参考技能关键字  java spring web mysql oracle linux  致谢 感谢您花时间阅读我的简历，期待能有机会和您共事。
+这里使用markdown来编写文章 </description>
+    </item>
+    
+  </channel>
+</rss>
