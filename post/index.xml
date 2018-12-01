@@ -44,7 +44,7 @@
       <pubDate>Fri, 23 Nov 2018 11:11:11 +0800</pubDate>
       
       <guid>https://nghsky.github.io/post/2018/11/26/commands/</guid>
-      <description>Hugo搭建个人博客本人常用命令 编译 hugo --theme=coder-portfolio --baseUrl=&amp;#34;https://nghsky.github.io&amp;#34; cd public git init git remote add origin http://github.com/nghsky/nghsky.github.io.git git add -A git commit -m &amp;#34;first commit&amp;#34; git push -u origin master git status git add -A:添加多文件 git add . :提交新添加和被修改的文件，不包含被删除的 git add -u :提交被修改和被删除的文件，不提交新添加的文件 git commit -m&amp;#34;本次提交说明&amp;#34; git push 致谢 感谢您花时间阅读，谢谢。</description>
+      <description>Hugo搭建个人博客本人常用命令 编译：hugo --theme=coder-portfolio --baseUrl=&amp;#34;https://nghsky.github.io&amp;#34; cd public git init git remote add origin http://github.com/nghsky/nghsky.github.io.git git add -A git commit -m &amp;#34;first commit&amp;#34; git push -u origin master git常用命令 git status	git add -A	添加多文件 git add . 提交新添加和被修改的文件，不包含被删除的 git add -u 提交被修改和被删除的文件，不提交新添加的文件 git commit -m &amp;#34;本次提交说明&amp;#34; git push GIT Command line instructions Git global setup git config --global user.name &amp;#34;吴昊天&amp;#34; git config --global user.email &amp;#34;nghsky@foxmail.com&amp;#34; Create a new repository git clone git@gitlab.</description>
     </item>
     
   </channel>

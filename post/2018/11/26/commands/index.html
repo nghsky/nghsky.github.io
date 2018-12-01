@@ -96,22 +96,48 @@
     
 
 <h1 id="hugo搭建个人博客本人常用命令">Hugo搭建个人博客本人常用命令</h1>
-<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">编译</span>
-<span class="n">hugo</span> <span class="o">--</span><span class="n">theme</span><span class="o">=</span><span class="n">coder</span><span class="o">-</span><span class="n">portfolio</span> <span class="o">--</span><span class="n">baseUrl</span><span class="o">=</span><span class="s">&#34;https://nghsky.github.io&#34;</span>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">编译</span><span class="err">：</span><span class="n">hugo</span> <span class="o">--</span><span class="n">theme</span><span class="o">=</span><span class="n">coder</span><span class="o">-</span><span class="n">portfolio</span> <span class="o">--</span><span class="n">baseUrl</span><span class="o">=</span><span class="s">&#34;https://nghsky.github.io&#34;</span>
 
 <span class="n">cd</span> <span class="kd">public</span>
 <span class="n">git</span> <span class="n">init</span>
 <span class="n">git</span> <span class="n">remote</span> <span class="n">add</span> <span class="n">origin</span> <span class="nl">http:</span><span class="c1">//github.com/nghsky/nghsky.github.io.git
 </span><span class="c1"></span><span class="n">git</span> <span class="n">add</span> <span class="o">-</span><span class="n">A</span>
 <span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s">&#34;first commit&#34;</span>
-<span class="n">git</span> <span class="n">push</span> <span class="o">-</span><span class="n">u</span> <span class="n">origin</span> <span class="n">master</span>
-
-<span class="n">git</span> <span class="n">status</span>
-<span class="n">git</span> <span class="n">add</span> <span class="o">-</span><span class="nl">A:</span><span class="n">添加多文件</span>
-<span class="n">git</span> <span class="n">add</span> <span class="o">.</span> <span class="o">:</span><span class="n">提交新添加和被修改的文件</span><span class="err">，</span><span class="n">不包含被删除的</span>
-<span class="n">git</span> <span class="n">add</span> <span class="o">-</span><span class="n">u</span> <span class="o">:</span><span class="n">提交被修改和被删除的文件</span><span class="err">，</span><span class="n">不提交新添加的文件</span>
-<span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span><span class="s">&#34;本次提交说明&#34;</span>
+<span class="n">git</span> <span class="n">push</span> <span class="o">-</span><span class="n">u</span> <span class="n">origin</span> <span class="n">master</span></code></pre></div>
+<h3 id="git常用命令">git常用命令</h3>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">git</span> <span class="n">status</span>	
+<span class="n">git</span> <span class="n">add</span> <span class="o">-</span><span class="n">A</span>		<span class="n">添加多文件</span>
+<span class="n">git</span> <span class="n">add</span> <span class="o">.</span> 		<span class="n">提交新添加和被修改的文件</span><span class="err">，</span><span class="n">不包含被删除的</span>
+<span class="n">git</span> <span class="n">add</span> <span class="o">-</span><span class="n">u</span> 		<span class="n">提交被修改和被删除的文件</span><span class="err">，</span><span class="n">不提交新添加的文件</span>
+<span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s">&#34;本次提交说明&#34;</span>
 <span class="n">git</span> <span class="n">push</span></code></pre></div>
+<hr />
+
+<h2 id="git-command-line-instructions">GIT Command line instructions</h2>
+
+<h4 id="git-global-setup">Git global setup</h4>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="n">global</span> <span class="n">user</span><span class="o">.</span><span class="na">name</span> <span class="s">&#34;吴昊天&#34;</span>
+<span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="n">global</span> <span class="n">user</span><span class="o">.</span><span class="na">email</span> <span class="s">&#34;nghsky@foxmail.com&#34;</span></code></pre></div>
+<h4 id="create-a-new-repository">Create a new repository</h4>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">git</span> <span class="n">clone</span> <span class="n">git</span><span class="nd">@gitlab.com</span><span class="o">:</span><span class="n">vmsWHT</span><span class="o">/</span><span class="n">vms</span><span class="o">-</span><span class="n">wx</span><span class="o">.</span><span class="na">git</span>	  
+<span class="n">cd</span> <span class="n">FsaMonitor</span>
+<span class="n">touch</span> <span class="n">README</span><span class="o">.</span><span class="na">md</span>
+<span class="n">git</span> <span class="n">add</span> <span class="n">README</span><span class="o">.</span><span class="na">md</span>
+<span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s">&#34;add README&#34;</span>
+<span class="n">git</span> <span class="n">push</span> <span class="o">-</span><span class="n">u</span> <span class="n">origin</span> <span class="n">master</span></code></pre></div>
+<h4 id="existing-folder">Existing folder</h4>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">cd</span> <span class="n">existing_folder</span>
+<span class="n">git</span> <span class="n">init</span>
+<span class="n">git</span> <span class="n">remote</span> <span class="n">add</span> <span class="n">origin</span> <span class="n">git</span><span class="nd">@gitlab.com</span><span class="o">:</span><span class="n">vmsWHT</span><span class="o">/</span><span class="n">vms</span><span class="o">-</span><span class="n">wx</span><span class="o">.</span><span class="na">git</span>
+<span class="n">git</span> <span class="n">add</span> <span class="o">.</span>
+<span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s">&#34;Initial commit&#34;</span>
+<span class="n">git</span> <span class="n">push</span> <span class="o">-</span><span class="n">u</span> <span class="n">origin</span> <span class="n">master</span></code></pre></div>
+<h4 id="existing-git-repository">Existing Git repository</h4>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">cd</span> <span class="n">existing_repo</span>
+<span class="n">git</span> <span class="n">remote</span> <span class="n">rename</span> <span class="n">origin</span> <span class="n">old</span><span class="o">-</span><span class="n">origin</span>
+<span class="n">git</span> <span class="n">remote</span> <span class="n">add</span> <span class="n">origin</span> <span class="n">git</span><span class="nd">@gitlab.com</span><span class="o">:</span><span class="n">vmsWHT</span><span class="o">/</span><span class="n">vms</span><span class="o">-</span><span class="n">wx</span><span class="o">.</span><span class="na">git</span>
+<span class="n">git</span> <span class="n">push</span> <span class="o">-</span><span class="n">u</span> <span class="n">origin</span> <span class="o">--</span><span class="n">all</span>
+<span class="n">git</span> <span class="n">push</span> <span class="o">-</span><span class="n">u</span> <span class="n">origin</span> <span class="o">--</span><span class="n">tags</span></code></pre></div>
 <hr />
 
 <h1 id="致谢">致谢</h1>
